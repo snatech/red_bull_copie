@@ -1,0 +1,129 @@
+/* recherche */
+.search {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #00162b;
+    align-items: start;
+    overflow: hidden;
+    display: none;
+}
+.search.active {
+    display: block;
+}
+.search svg{
+    width: 30px;
+    color: white;
+    cursor: pointer;
+}
+.search img{
+    width: 120px;
+    height: 20px;
+}
+.search div label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 70%;
+}
+.search div label input{
+    outline: none;
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+}
+
+/* menu */
+header nav{
+    position: absolute;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li#logo img{
+    width: 140px;
+}
+
+header nav ul li#menu ul{
+    background-color: #444b3eaa;
+    position: relative;
+    justify-content: start;
+    padding: 5px 20px;
+    gap: 30px;
+    border-radius: 20px;
+    border: 1px solid #c9c9c9;
+}
+
+header nav ul li a.active{
+    border-bottom: 2px solid #ff3f3f;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid #ff3f3f;
+}
+
+header nav ul li#logo a:hover{
+    border: none;
+}
+
+header nav ul li#search svg{
+    width: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    background-color: #00162b;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer div li{
+    list-style: none;
+    cursor: pointer;
+}
+
+footer div span{
+    font-size: 12px;
+    width: 180px;
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>redbull</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="shortcut icon" href="images/logo-redbul.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/athletes.css">
+    </head>
+
+    <body>
+        <div class="search">
+            <div class="d-flex justify-content-between p-5">
+                <a href="index.html">
+                    <img src="images/redbullcom-logo_double-with-text.svg" alt="">
+                </a>
+                <label for="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type="text" placeholder="Rechercher ici">
+                </label>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" id="close-svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>              
+            </div>
+        </div>
+
+        <header class="athlete">
+            <img src="images/wout-van-aert-belgium-2020.avif" alt="">
+            
+            <div id="filter"></div>
+
+            <nav>
+                <ul>
+                    <li id="logo">
+                        <a href="index.html">
+                            <img src="images/redbullcom-logo_double-with-text.svg" alt="" srcset="">
+                        </a>
+                    </li>
+                    <li id="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="athlete.html" class="active">Athletes</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li id="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="search-svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                          </svg>
+                          
+                    </li>
+                </ul>
+            </nav>
+            
+            <div id="content">
+                <div>
+                    <h1>Athletes</h1>
+                    <p>Get to know all the athletes from the World of Red Bull. Discover all the facts, stats, success stories, latest achievements and more
+                    </p>
+                    
+                </div>
+            </div>
+        </header>
+
+        <main class="athlete">
+            <div class="container">
+                <div class="cards">
+                    <div>
+                        <img src="images/marc-marquez-motogp-of-the-americas-2024.avif" class="card" alt="">
+                        <div>
+                            <h5><span><img src="images/espagne.png" alt=""></span> Espagne</h5>
+                            <h3>Marc Márquez</h3>
+                            <h5>MotoGP</h5>
+                        </div>
+                        <img class="profil" src="images/marc-marquez-gresini-racing-portrait-2024.avif" alt="">
+                    </div>
+                    <div>
+                        <img src="images/perla.jpg" class="card" alt="">
+                        <div>
+                            <h5><span><img src="images/gabon.png" alt=""></span> Gabon</h5>
+                            <h3>Perla Melicynthe</h3>
+                            <h5>Athlete</h5>
+                        </div>
+                        <img class="profil" src="images/melda.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="images/molly-carlson-action.jpg" class="card" alt="">
+                        <div>
+                            <h5><span><img src="images/espagne.png" alt=""></span> Canada</h5>
+                            <h3>Molly Carlson</h3>
+                            <h5>Cliff Diving</h5>
+                        </div>
+                        <img class="profil" src="images/molly-carlson-portrait.avif" alt="">
+                    </div>
+                </div>
+                
+                <div class="personnes">
+                    <h3>Find Athlete by Interest</h3>
+                    <div>
+                        <div class="filter">
+                            <h5>Filtrer par </h5>
+                            <select name="" id="filter-select">
+                                <option hidden>Pays</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Espagne">Espagne</option>
+                                <option value="Gabon">Gabon</option>
+                            </select>
+                        </div>
+
+                        <div class="cards-athlete">
+                            <div class="card-athlete">
+                                <img src="images/marc-marquez-gresini-racing-portrait-2024.avif" class="img" alt="">
+                                <div>
+                                    <h6>MotoGt</h6>
+                                    <h3>Marc Márquez</h3>
+                                </div>
+                                <h5>
+                                    <img src="images/espagne.png" alt="">
+                                    <span>Espagne</span>
+                                </h5>
+                            </div>
+                            <div class="card-athlete">
+                                <img src="images/molly-carlson-portrait.avif" class="img" alt="">
+                                <div>
+                                    <h6>Cliff Diving</h6>
+                                    <h3>Molly Carlson</h3>
+                                </div>
+                                <h5>
+                                    <img src="images/canada.png" alt="">
+                                    <span>Canada</span>
+                                </h5>
+                            </div>
+                            <div class="card-athlete">
+                                <img src="images/melda.jpg" class="img" alt="">
+                                <div>
+                                    <h6>Athlete</h6>
+                                    <h3>Perla Melicythe</h3>
+                                </div>
+                                <h5>
+                                    <img src="images/gabon.png" alt="">
+                                    <span>Gabon</span>
+                                </h5>
+                            </div>
+                            <div class="card-athlete">
+                                <img src="images/marc-marquez-gresini-racing-portrait-2024.avif" class="img" alt="">
+                                <div>
+                                    <h6>MotoGt</h6>
+                                    <h3>Marc Márquez</h3>
+                                </div>
+                                <h5>
+                                    <img src="images/espagne.png" alt="">
+                                    <span>Espagne</span>
+                                </h5>
+                            </div>
+                            <div class="card-athlete">
+                                <img src="images/melda.jpg" class="img" alt="">
+                                <div>
+                                    <h6>Athlete</h6>
+                                    <h3>Perla Melicythe</h3>
+                                </div>
+                                <h5>
+                                    <img src="images/gabon.png" alt="">
+                                    <span>Gabon</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                  </svg>
+                   Load more</button>
+            </div>
+            
+
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <ul>
+                        <li>Products & Company</li>
+                        <li>Contact Us</li>
+                        <li>Jobs</li>
+                        <li>Media</li>
+                        <li>Red Bull Shop</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Cookie Settings</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Imprint</li>
+                        <li>Brand Protection</li>
+                        <li>Fraud Warning</li>
+                        <li>Do Not Sell/Share My Personal Information</li>
+                        <li>Limit Use of My Sensitive Personal Information</li>
+                    </ul>
+                </div>
+                <span>© 2024 Red Bull</span>
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

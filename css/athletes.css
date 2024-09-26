@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header div#filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006a;
+    top: 0;
+    /* z-index: -1; */
+}
+
+header div#filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #00162bec, transparent);
+    top: 0;
+    /* z-index: -1; */
+}
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    height: 70vh;
+    overflow: hidden;
+}
+header >img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: scaling 10s ease-in infinite;
+}
+
+@keyframes scaling {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+header div#content{
+    position: relative;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 80%;
+}
+
+
+header div#content div{
+    color: white;
+    animation: apearence 1s;
+}
+
+@keyframes apearence {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+header div#content div h1{
+    font-size: 22px;
+}
+header div#content div p{
+    font-size: 14px;
+    color: #cdcdcdf5;
+}
+
+header div#content div p{
+    width: 50%;
+}
+
+header div#content div button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff3c3c;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div#content div button svg{
+    width: 20px;
+}
+
+
+/* main */
+main{
+    padding: 0 40px;
+}
+
+main button{
+    padding: 5px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 20px;
+    gap: 5px;
+    border: 1px solid #090c1560;
+    background-color: transparent;
+}
+main button{
+    margin: 30px auto;
+}
+
+main button svg{
+    width: 20px;
+    rotate: 90deg;
+}
+
+/* main athlete */
+main {
+    background-color: whitesmoke;
+    padding: 0 0 20px;
+}
+main .container .cards{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    position: relative;
+    top: -100px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+main .container .cards div{
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    padding: 0 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 7px -1px #00000098;
+    -webkit-box-shadow: 0px 5px 7px -1px #0000004f;
+    -moz-box-shadow: 0px 5px 7px -1px #000000bf;
+    animation: apearence 2.5s;
+}
+main .container .cards div img.card{
+    position: relative;
+    width: 330px;
+    height: 200px;
+    border: none;
+}
+main .container .cards div img.profil{
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid gray;
+    width: 130px;
+    height: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .container .cards div div{
+    justify-content: end;
+    box-shadow: none;
+}
+main .container .cards div div h5{
+    font-size: 12px;
+    color: #818181cc;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+main .container .cards div div h5 img{
+    width: 10px;
+}
+main .container .cards div div h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+main .container .personnes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+main .container .personnes >h3{
+    font-weight: 700;
+    animation: apearence 1s;
+}
+main .container .personnes .filter{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0px 0px 5px 0px #00000037;
+    -webkit-box-shadow: 0px 0px 5px 0px #00000037;
+    -moz-box-shadow: 0px 0px 5px 0px #00000037;
+    animation: apearence 1s;
+}
+main .container .personnes .filter h5{
+    font-size: 14px;
+    color: #b1b1b1a8;
+    font-weight: 600;
+}
+main .container .personnes .filter select{
+    padding: 3px 5px;
+    font-size: 14px;
+    width: 20%;
+    border-radius: 20px;
+    border: 1px solid #c2c1c1;
+    background-color: transparent;
+    outline: none;
+    font-weight: 600;
+    color: #b1b1b1a8;
+}
+
+main .container .cards-athlete{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+main .container .cards-athlete div.card-athlete{
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #090b1705;
+    animation: apearence 1.2s;
+}
+main .container .cards-athlete div.card-athlete:hover{
+    background-color: white;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+main .container .cards-athlete div img.img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+main .container .cards-athlete div h5 img{
+    width: 15px;
+    height: 15px;
+}
+main .container .cards-athlete div h5{
+    text-align: end;
+    font-size: 12px;
+    color: #979797de;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin: auto 0;
+}
+main .container .cards-athlete div div{
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+    width: 100%;
+}
+main .container .cards-athlete div.disable{
+    display: none;
+}
+main .container .cards-athlete div div h6{
+    font-size: 12px;
+    color: #979797de;
+}
+main .container .cards-athlete div div h3{
+    font-size: 16px;
+}
